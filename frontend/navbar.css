@@ -1,0 +1,32 @@
+nav.navbar {
+  width: 100%;
+  background: #e2b6b6;
+  padding: 0.5em 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+nav.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav.navbar ul li {
+  margin: 0 1.5em;
+}
+nav.navbar ul li a {
+  text-decoration: none;
+  color: #6d3d3d;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+nav.navbar ul li a:hover {
+  color: #b85c5c;
+}
+body {
+  padding-top: 3.5em; /* To prevent content from being hidden under the navbar */
+} 

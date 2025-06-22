@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <title>Chatbot - Brave Coder</title>
+</head>
+<body>
+    <!-- Navbar include -->
+    <div id="navbar-container"></div>
+    <script>fetch('../navbar.html').then(r => r.text()).then(html => {document.getElementById('navbar-container').innerHTML = html;});</script>
+    <div class="wrapper">
+        <div class="title">AI Counselor ChatBot</div>
+        <div class="box">
+            <!-- Chat messages will be dynamically added here by chatbot.js -->
+        </div>
+        
+        <div class="typing-area">
+            <div class="input-field">
+                <input type="text" placeholder="Type your message" required>
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="chatbot.js" defer></script>
+</body>
+</html>
