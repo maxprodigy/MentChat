@@ -1,300 +1,97 @@
-body{
-    margin: 0;
-    padding: 0;
-
+body {
+  margin: 0;
+  padding: 0;
+  background: #f3e5e5;
+  font-family: 'Inter', Arial, sans-serif;
 }
-.desktop1-desktop1 {
-    width: 100%;
-    height: 1024px;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    align-items: flex-start;
-    flex-shrink: 0;
-    border-color: transparent;
-    background-color: rgba(243, 229, 229, 1);
+
+.homepage-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  width: 100vw;
+}
+
+.homepage-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 80vw;
+  max-width: 1200px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 3rem 2rem;
+}
+
+.homepage-text {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.homepage-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 1.2rem 0;
+  color: #2d1a1a;
+  letter-spacing: 2px;
+}
+
+.homepage-desc {
+  font-size: 1.25rem;
+  color: #3d2c2c;
+  margin-bottom: 2.2rem;
+  max-width: 600px;
+}
+
+.try-btn {
+  display: inline-block;
+  background: #e2b6b6;
+  color: #6d3d3d;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.8em 2.2em;
+  border-radius: 2em;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: background 0.2s, color 0.2s;
+  border: none;
+}
+.try-btn:hover {
+  background: #b85c5c;
+  color: #fff;
+}
+
+.homepage-image {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+
+@media (max-width: 900px) {
+  .homepage-content {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
   }
-  .desktop1-image1 {
-    top: 176px;
-    left: 55%;
-    width: 40%;
-    height: auto;
-    position: absolute;
-    border-color: transparent;
+  .homepage-image img {
+    max-width: 300px;
   }
-  .desktop1-image2 {
-    top: 44px;
-    left: 1329px;
-    width: 39px;
-    height: 47px;
-    position: absolute;
-    border-color: transparent;
+  .homepage-title {
+    font-size: 2.2rem;
   }
-  .desktop1-text {
-    top: 66px;
-    left: 1203px;
-    color: rgba(0, 0, 0, 1);
-    height: auto;
-    position: absolute;
-    font-size: 20px;
-    align-self: auto;
-    font-style: Regular;
-    text-align: left;
-    font-family: Inter;
-    font-weight: 400;
-    line-height: normal;
-    font-stretch: normal;
-    margin-right: 0;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
-  .desktop1-rectangle5 {
-    top: 66px;
-    left: 900px;
-    width: 287px;
-    height: 25px;
-    position: absolute;
-  }
-  .desktop1-group1 {
-    top: 66px;
-    left: 463px;
-    width: 160px;
-    height: 25px;
-    display: flex;
-    padding: 0;
-    position: absolute;
-    align-self: auto;
-    box-sizing: border-box;
-    align-items: flex-start;
-    flex-shrink: 1;
-    border-color: transparent;
-    border-style: none;
-    border-width: 0;
-    margin-right: 0;
-    border-radius: 0px 0px 0px 0px;
-    margin-bottom: 0;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: rgba(218, 153, 153, 0.27000001072883606);
-    border-radius: 15px;
-  }
-  .desktop1-text02 {
-    left: 41.81817626953125px;
-    color: rgba(30, 30, 30, 1);
-    width: 76px;
-    height: auto;
-    position: absolute;
-    font-size: 20px;
-    align-self: auto;
-    font-style: Regular;
-    text-align: left;
-    font-family: Inter;
-    font-weight: 400;
-    line-height: normal;
-    font-stretch: normal;
-    text-decoration: none;
-  }
-  .desktop1-group2 {
-    top: 66px;
-    left: 268px;
-    width: 160px;
-    height: 25px;
-    display: flex;
-    padding: 0;
-    position: absolute;
-    align-self: auto;
-    box-sizing: border-box;
-    align-items: flex-start;
-    flex-shrink: 1;
-    border-color: transparent;
-    border-style: none;
-    border-width: 0;
-    margin-right: 0;
-    border-radius: 0px 0px 0px 0px;
-    margin-bottom: 0;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: rgba(218, 153, 153, 0.27000001072883606);
-    border-radius: 15px;
-  }
-  .desktop1-text04 {
-    left: 34.54545593261719px;
-    color: rgba(30, 30, 30, 1);
-    width: 91px;
-    height: auto;
-    position: absolute;
-    font-size: 20px;
-    align-self: auto;
-    font-style: Regular;
-    text-align: left;
-    font-family: Inter;
-    font-weight: 400;
-    line-height: normal;
-    font-stretch: normal;
-    text-decoration: none;
-  }
-  .desktop1-group3 {
-    top: 66px;
-    left: 73px;
-    width: 160px;
-    height: 25px;
-    display: flex;
-    padding: 0;
-    position: absolute;
-    align-self: auto;
-    box-sizing: border-box;
-    align-items: flex-start;
-    flex-shrink: 1;
-    border-color: transparent;
-    border-style: none;
-    border-width: 0;
-    margin-right: 0;
-    border-radius: 0px 0px 0px 0px;
-    margin-bottom: 0;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: rgba(218, 153, 153, 0.27000001072883606);
-    border-radius: 15px;
-  }
-  .desktop1-text06 {
-    left: 47.272727966308594px;
-    color: rgba(30, 30, 30, 1);
-    width: 65px;
-    height: auto;
-    position: absolute;
-    font-size: 20px;
-    align-self: auto;
-    font-style: Regular;
-    text-align: left;
-    font-family: Inter;
-    font-weight: 400;
-    line-height: normal;
-    font-stretch: normal;
-    text-decoration: none;
-  }
-  .desktop1-text08 {
-    top: 180px;
-    left: 73px;
-    color: rgba(30, 30, 30, 1);
-    height: auto;
-    position: absolute;
-    font-size: 80px;
-    align-self: auto;
-    font-style: Semi Bold;
-    text-align: left;
-    font-family: Inter;
-    font-weight: 700;
-    line-height: normal;
-    font-stretch: normal;
-    margin-right: 0;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
-  .desktop1-text09 {
-    font-weight: 700;
-  }
-  .desktop1-text14 {
-    top: 420px;
-    left: 73px;
-    color: rgba(0, 0, 0, 1);
-    width: 635px;
-    height: auto;
-    position: absolute;
-    font-size: 27px;
-    align-self: auto;
-    font-style: Light;
-    text-align: left;
-    font-family: Inter;
-    font-weight: 300;
-    line-height: normal;
-    font-stretch: normal;
-    margin-right: 0;
-    margin-bottom: 0;
-    text-decoration: none;
-  }
-  .desktop1-group4 {
-    top: 695px;
-    left: 73px;
-    width: 143px;
-    height: 25px;
-    display: flex;
-    padding: 0;
-    position: absolute;
-    align-self: auto;
-    box-sizing: border-box;
-    align-items: flex-start;
-    flex-shrink: 1;
-    border-color: transparent;
-    border-style: none;
-    border-width: 0;
-    margin-right: 0;
-    border-radius: 0px 0px 0px 0px;
-    margin-bottom: 0;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: rgba(218, 153, 153, 0.27000001072883606);
-    border-radius: 15px;
-  }
-  .desktop1-text16 {
-    top: 4.6875px;
-    left: 21.870582580566406px;
-    color: rgba(0, 0, 0, 1);
-    width: 89px;
-    height: auto;
-    position: absolute;
-    font-size: 15px;
-    align-self: auto;
-    font-style: Regular;
-    text-align: center;
-    font-family: Inter;
-    font-weight: 400;
-    line-height: normal;
-    font-stretch: normal;
-    text-decoration: none;
-  }
-  .desktop1-group5 {
-    top: 833px;
-    left: 179px;
-    width: 423px;
-    height: 68px;
-    display: flex;
-    padding: 0;
-    position: absolute;
-    align-self: auto;
-    box-sizing: border-box;
-    align-items: flex-start;
-    flex-shrink: 1;
-    border-color: transparent;
-    border-style: none;
-    border-width: 0;
-    margin-right: 0;
-    border-radius: 0px 0px 0px 0px;
-    margin-bottom: 0;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: rgba(218, 153, 153, 0.27000001072883606);
-    border-radius:305px;
-  }
-  .desktop1-text18 {
-    top: 18px;
-    left: 117px;
-    color: rgba(0, 0, 0, 1);
-    width: 193px;
-    height: auto;
-    position: absolute;
-    font-size: 30px;
-    align-self: auto;
-    font-style: Regular;
-    text-align: center;
-    font-family: Inter;
-    font-weight: 400;
-    line-height: normal;
-    font-stretch: normal;
-    text-decoration: none;
-  }
-  
-  .signup{
-    margin-top: 65px;
-    margin-left: 1250px;
-    color: black;
-  }
+}

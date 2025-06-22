@@ -1,49 +1,41 @@
-      <!DOCTYPE html>
-      <html>
-      <head>
-          <title>Sign Up</title>
-        <link rel="stylesheet" type="text/css" href="signup.css">
-        <link rel="stylesheet" href="../navbar.css">
-      </head>
-      <body>
-        <!-- Navbar include -->
-        <div id="navbar-container"></div>
-        <script>fetch('../navbar.html').then(r => r.text()).then(html => {document.getElementById('navbar-container').innerHTML = html;});</script>
-        <div class="container">
-          <div class="left">
-                  <img src="/bird1.png" alt="bird111088" class="bird1"/>
-                  <h1><span class="normal">Sign Up</span></h1>
-                  <div class="signup">
-            <form>
-              <input id = "input1" type="text" placeholder="First Name" required>
-                      <input id = "input2" type="text" placeholder="Last Name" required><br>
-              <input id = "input3" type="text" placeholder="Mobile Number" required><br>
-              <input id = "input4" type="text" placeholder="Email Address" required><br>
-              <input id = "input5" type="password" placeholder="Create Password" required><br>
-              <input id = "input6" type="password" placeholder="Confirm Password" required><br>
-              <input id = "input7" type="submit" value="Sign Up">
-                      <input id = "input8" type="submit" value="Sign In">
-            </form>
-              </div>
-              <img
-                src="/bird2.png"
-                alt="bird211089"
-                class="bird2"
-              />
-          </div>
-          <div class="right">
-                  <div class="rt">
-                  <span>Your</span>
-            <span><h4>Mental</h4></span>
-            <span><h4>Health</h4></span>
-            <span>Matters</span>
-              </div>
-              <img
-                src="/plant.png"
-                alt="plant11076"
-                class="plant"
-              />
-              </div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <link rel="stylesheet" href="../navbar.css">
+</head>
+<body>
+    <!-- Navbar include -->
+    <div id="navbar-container"></div>
+    <script>fetch('../navbar.html').then(r => r.text()).then(html => {document.getElementById('navbar-container').innerHTML = html;});</script>
+    <div class="signup-main">
+        <div class="signup-content">
+            <div class="signup-form-section">
+                <h1 class="signup-title">Sign Up</h1>
+                <div class="signup">
+                    <form>
+                        <label for="input1">First Name</label>
+                        <input id="input1" type="text" placeholder="First Name" required>
+                        <label for="input2">Last Name</label>
+                        <input id="input2" type="text" placeholder="Last Name" required><br>
+                        <label for="input3">Mobile Number</label>
+                        <input id="input3" type="text" placeholder="Mobile Number" required><br>
+                        <label for="input4">Email Address</label>
+                        <input id="input4" type="text" placeholder="Email Address" required><br>
+                        <label for="input5">Create Password</label>
+                        <input id="input5" type="password" placeholder="Create Password" required><br>
+                        <label for="input6">Confirm Password</label>
+                        <input id="input6" type="password" placeholder="Confirm Password" required><br>
+                        <input id="input7" type="submit" value="Sign Up">
+                        <input id="input8" type="submit" value="Sign In">
+                    </form>
+                </div>
+            </div>
+            <div class="signup-image-section">
+                <img src="https://res.cloudinary.com/dywkbcfp5/image/upload/f_auto/v1508396368/gkfu0k01nhss0ig3zlab.jpg" alt="Therapist and Client" class="signup-image" />
+            </div>
         </div>
-      </body>
-      </html>
+    </div>
+</body>
+</html>

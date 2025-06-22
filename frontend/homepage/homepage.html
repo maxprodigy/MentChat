@@ -12,61 +12,17 @@
   <!-- Navbar include -->
   <div id="navbar-container"></div>
   <script>fetch('../navbar.html').then(r => r.text()).then(html => {document.getElementById('navbar-container').innerHTML = html;});</script>
- 
-    <div>
-      <div class="desktop1-desktop1">
-        <img
-          src="/home.png"
-          alt="image11141"
-          class="desktop1-image1"
-        />
-        <img
-          src="profile.png"
-          alt="image21162"
-          class="desktop1-image2"
-        />
-        
-       <a href = "signup.html" class ="signup">Sign Up</a>
-        <!-- <img
-          src="/playground_assets/rectangle51162-dcz4.svg"
-          alt="Rectangle51162"
-          class="desktop1-rectangle5"
-        /> -->
-        <div class="desktop1-group1">
-          <span class="desktop1-text02"><span>ABOUT</span></span>
-        </div>
-        <div class="desktop1-group2">
-          <a href = "chatbot.html"><span class="desktop1-text04"><span>CHATBOT</span></span></a>
-        </div>
-        <div class="desktop1-group3">
-          <span class="desktop1-text06"><span>HOME</span></span>
-        </div>
-        <!-- <span class="search-box">
-          <input type="text">
-        </span> -->
-        <span class="desktop1-text08">
-          <span class="desktop1-text09">
-            <span>AI</span>
-            <br />
-            <span></span>
-          </span>
-          <span>COUNSELOR</span>
-        </span>
-        <span class="desktop1-text14">
-          <span>
-            Mental health includes our emotional, psychological, and social
-            well-being. It affects how we think, feel, and act. It also helps
-            determine how we handle stress, relate to others, and make healthy
-            choices. Mental health is important at every stage of life, from
-            childhood and adolescence through adulthood.
-          </span>
-        </span>
-        <div class="desktop1-group4">
-          <span class="desktop1-text16"><span>READ MORE</span></span>
-        </div>
-        <div class="desktop1-group5">
-          <a href = "chatbot.html"><span class ="desktop1-text18"><span>TRY IT OUT</span></span></a>
-        </div>
+  <div class="homepage-main">
+    <div class="homepage-content">
+      <div class="homepage-text">
+        <h1 class="homepage-title">AI COUNSELOR</h1>
+        <p class="homepage-desc">
+          Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make healthy choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood.
+        </p>
+        <a href="../ChatBot/chatbot.html" class="try-btn">TRY IT OUT</a>
+      </div>
+      <div class="homepage-image">
+        <img src="https://media.npr.org/assets/img/2023/07/02/gettyimages-1383880527-170667a1-acbe7402026b89a53d85fe95be3476ab4919d788.jpg?s=900&c=85&f=webp" alt="Counseling" />
       </div>
     </div>
   </div>
