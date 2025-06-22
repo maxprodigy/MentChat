@@ -1,40 +1,79 @@
 # MentChatbot: Empathetic Response Generator for Mental Health Support
 
 ## Project Overview
-MentChatbot is a domain-specific chatbot designed to offer encouraging and emotionally supportive responses to individuals expressing distress. The chatbot simulates the tone of a kind, non-judgmental friend or counselor—someone who listens and responds with compassion when you need it most.
+MentChatbot is a domain-specific AI chatbot built to provide emotionally supportive and encouraging responses to users experiencing distress. It mimics the tone of a kind, non-judgmental friend or counselor—someone who truly listens and replies with compassion when you're feeling overwhelmed.
+
+---
 
 ## Why Mental Health?
-Many people silently struggle with feelings of sadness, anxiety, overwhelm, and loneliness. While professional help is essential, it isn't always accessible. MentChatbot aims to fill part of that gap by being available 24/7 to offer a few kind words and a sense of understanding.
+Mental wellness is essential, but access to support isn’t always easy. Many people silently deal with sadness, anxiety, or loneliness. While professional care is vital, MentChatbot is designed to offer an extra layer of comfort—24/7, anytime someone just needs to feel heard.
+
+---
 
 ## Dataset
-- **Sources:**
-  - A wellness-focused Korean chatbot dataset (translated to English)
-  - A mental health intent–response dataset ("Friend Mode")
-- **Merging & Cleaning:**
-  - Combined, deduplicated, and cleaned both datasets
-  - Final dataset: ~3,230 prompt–response pairs
-  - Preprocessing: lowercasing, removing non-alphabetic characters, stopword removal, lemmatization
-- **Format:**
-  - Each entry: a user input describing a difficult emotion or mental state, and a response offering encouragement, empathy, or validation
+**Sources:**
+- A wellness-focused Korean chatbot dataset (translated to English)
+- A mental health intent–response dataset (“Friend Mode”)
 
-## Model and Fine-Tuning
-- **Base Model:** `google/flan-t5-small` (instruction-tuned transformer)
-- **Tokenization:** Max length 128 for both input and output
-- **Training:**
-  - 20 epochs, batch size 4, learning rate 5e-5
-  - Best model selected by evaluation loss
-  - Tracked with Weights & Biases (W&B)
-- **Final Training Loss:** ~0.39
-- **Frameworks:** `transformers`, `torch`, `pandas`, `scikit-learn`, `nltk`
+**Preparation:**
+- Merged and cleaned both datasets
+- Removed duplicates, normalized text, performed lemmatization and stopword filtering
+- Final dataset: ~3,230 unique prompt–response pairs
 
-## Performance Metrics
-- **BLEU Score:** Average BLEU ≈ 0.0401 (on 50 samples)
-- **Qualitative Analysis:**
-  - Model provides supportive, encouraging responses
-  - Sometimes responses are generic or repetitive
-  - Example:
-    - **User:** I feel like I'm not good enough
-    - **Chatbot:** I think it's a good idea to ask for help if you have a hard time.
+**Format:**
+- `User_Input`: An emotional expression
+- `Chatbot_Response`: An encouraging reply
+
+---
+
+## Model & Fine-Tuning
+
+| Parameter        | Details                         |
+|------------------|----------------------------------|
+| **Base Model**   | `google/flan-t5-small`          |
+| **Tokenizer**    | Max length: 128 for input/output |
+| **Frameworks**   | `transformers`, `torch`, `pandas`, `nltk` |
+| **Training Strategy** | 20 epochs, LR = 5e-5, batch size = 4 |
+| **Evaluation**   | Lowest eval loss selection      |
+
+---
+
+## Training Sessions Summary
+
+| Training | Epochs | Loss   | Samples/sec | Notes                      |
+|----------|--------|--------|-------------|-----------------------------|
+| 1st Run  | 3      | ~2.89  | ~17/sec     | Baseline testing            |
+| 2nd Run  | 6      | ~1.02  | ~23.2/sec   | Better convergence          |
+| 3rd Run  | 20     | **0.39** | ~24.7/sec   | Final fine-tuned version    |
+
+---
+
+## Evaluation Metrics
+
+- **BLEU Score**: Average ~0.0401 across 50 test samples
+- **Interpretation**:  
+  While BLEU scores are traditionally used for translation, they're less effective in evaluating emotional tone or supportiveness. In practice, the chatbot often provides kind, comforting, and appropriate replies—even when phrasing differs from reference responses.
+
+---
+
+## Sample Dialogue
+
+**User:** I feel like I'm not good enough  
+**Chatbot:** I think it's a good idea to ask for help if you have a hard time.
+
+**User:** I can no longer control my feelings  
+**Chatbot:** You might want to talk to someone who can help you.
+
+**User:** What should I do if I feel anxious?  
+**Chatbot:** Try taking a deep breath and talk to someone you trust.
+
+---
+
+## Homepage Preview
+
+![Homepage Screenshot](https://github.com/maxprodigy/MentChat/homepage.png)
+
+---
 
 ## How to Run the Project
 
