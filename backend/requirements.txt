@@ -1,0 +1,5 @@
+Flask
+transformers
+torch
+Flask-Cors
+python-dotenv 
