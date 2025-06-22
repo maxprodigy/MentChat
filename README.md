@@ -5,6 +5,11 @@ MentChatbot is a domain-specific AI chatbot built to provide emotionally support
 
 ---
 
+## Video Presentation
+[Link](https://youtu.be/k1PYiQMTbNg)
+
+---
+
 ## Why Mental Health?
 Mental wellness is essential, but access to support isn’t always easy. Many people silently deal with sadness, anxiety, or loneliness. While professional care is vital, MentChatbot is designed to offer an extra layer of comfort—24/7, anytime someone just needs to feel heard.
 
@@ -71,7 +76,7 @@ Mental wellness is essential, but access to support isn’t always easy. Many pe
 
 ## Homepage Preview
 
-![Homepage Screenshot](https://github.com/maxprodigy/MentChat/homepage.png)
+![Homepage Screenshot](https://github.com/maxprodigy/MentChat/blob/main/homepage.png)
 
 ---
 
