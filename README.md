@@ -1,7 +1,7 @@
 # MentChatbot: Empathetic Response Generator for Mental Health Support
 
 ## Project Overview
-MentChatbot is a domain-specific AI chatbot built to provide emotionally supportive and encouraging responses to users experiencing distress. It mimics the tone of a kind, non-judgmental friend or counselor—someone who truly listens and replies with compassion when you're feeling overwhelmed.
+MentChatbot is a domain-specific AI chatbot built to provide emotionally supportive and encouraging responses to users experiencing distress. It mimics the tone of a kind, non-judgmental friend or counselor, someone who truly listens and replies with compassion when you're feeling overwhelmed.
 
 ---
 
@@ -62,7 +62,7 @@ Mental wellness is essential, but access to support isn’t always easy. Many pe
 
 - **BLEU Score**: Average ~0.0401 across 50 test samples
 - **Interpretation**:  
-  While BLEU scores are traditionally used for translation, they're less effective in evaluating emotional tone or supportiveness. In practice, the chatbot often provides kind, comforting, and appropriate replies—even when phrasing differs from reference responses.
+  While BLEU scores are traditionally used for translation, they're less effective in evaluating emotional tone or supportiveness. In practice, the chatbot often provides kind, comforting, and appropriate replies even when phrasing differs from reference responses.
 
 ---
 
