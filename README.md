@@ -10,6 +10,11 @@ MentChatbot is a domain-specific AI chatbot built to provide emotionally support
 
 ---
 
+## Model Link (Hugging Face)
+[Link](https://huggingface.co/maxprodigy/MentChat)
+
+---
+
 ## Why Mental Health?
 Mental wellness is essential, but access to support isn’t always easy. Many people silently deal with sadness, anxiety, or loneliness. While professional care is vital, MentChatbot is designed to offer an extra layer of comfort—24/7, anytime someone just needs to feel heard.
 
